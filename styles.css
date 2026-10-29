@@ -1,0 +1,86 @@
+ body {
+    background-attachment: fixed;
+    background-image: url('https://i.pinimg.com/736x/f3/80/46/f380460a2694c45130010092f3234a6d.jpg');
+}
+
+
+/* 1. Подключаем шрифты через локальные файлы из Google Fonts (вставьте это в самый верх файла) */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://gstatic.com) format('truetype');
+}
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://gstatic.com) format('truetype');
+}
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://gstatic.com) format('truetype');
+}
+@font-face {
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://gstatic.com) format('truetype');
+}
+
+/* 2. Ниже назначаем шрифты нужным элементам, например: */
+body {
+    font-family: 'Forum', serif; /* Основной текст сайта */
+}
+
+h1, h2, h3 {
+    font-family: 'Caveat', cursive; /* Заголовки */
+    color: #5E3C36;
+    text-align: center;   
+}
+
+
+/* Добавьте этот код в ваш style.css */
+.title-box {
+    background-color: #F6F0EF;      /* Белая коробочка */
+    border-left: 10px dashed #d7ccc8; /* Нежно-коричневый пунктир слева */
+    border-right: 10px dashed #d7ccc8;/* Нежно-коричневый пунктир справа */
+    border-top: 10px dashed #d7ccc8;               /* Сверху рамки нет */
+    border-bottom: 10px dashed #d7ccc8;            /* Снизу рамки нет */
+    padding: 6px;                  /* Отступы внутри коробочки */
+    display: inline-block;          /* Коробочка подстраивается под ширину контента */
+    /* width: 100%; */              /* Раскомментируйте, если коробка нужна на всю ширину */
+}
+
+/* Стили для заголовка внутри этой коробочки */
+.title-box h3 {
+    font-family: 'Caveat', cursive; /* Ваш подключенный шрифт */
+    margin-top: 0;                  /* Убираем лишний отступ сверху */
+    margin-bottom: 15px;            /* Отступ от заголовка до списка */
+}
+
+/* Стили для списка внутри коробочки */
+.title-box ul {
+    margin-bottom: 0;               /* Убираем лишний отступ снизу */
+    padding-left: 20px;             /* Отступ для маркеров списка */
+}
+.corner-cat {
+            position: fixed;   /* Фиксирует картинку относительно экрана */
+            top: 10px;         /* Отступ от верхнего края */
+            right: 10px;       /* Отступ от правого края */
+            width: 150px;      /* Ширина гифки (можно менять) */
+            height: auto;      /* Высота подстроится автоматически */
+            z-index: 9999;     /* Чтобы кот всегда был поверх других элементов */
+        }
+
+}
+.corner-b {
+            position: fixed;   /* Фиксирует картинку относительно экрана */
+            top: 20px;         /* Отступ от верхнего края */
+            right: 10px;       /* Отступ от правого края */
+            width: 100px;      /* Ширина гифки (можно менять) */
+            height: auto;      /* Высота подстроится автоматически */
+            z-index: 9999;     /* Чтобы кот всегда был поверх других элементов */
+        }
